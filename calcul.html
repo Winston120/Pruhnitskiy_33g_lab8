@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calc</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="calcul.css">
+	<script type="text/javascript" src="calcul.js"></script>
+
+</head>
+<body>
+<div class="grap">
+	<form class="f2" name="claculator" >
+		<input  class="f" name="display" id="quantity" readonly  maxlength="256">
+		<input class="kf" type="button" value="=" onclick="Resul()">
+	</form>
+
+		<div class="stroka">
+			<div><button  class="key" onclick="document.claculator.display.value +='1'">1</button></div>
+			<div><button  class="key" onclick="document.claculator.display.value +='2'">2</button></div>
+			<div><button  class="key" onclick="document.claculator.display.value +='3'">3</button></div>
+			<div><button  class="key" onclick="document.claculator.reset()">C</button></div>
+			
+		</div>
+		<div class="stroka">
+			<div><button  class="key" onclick="document.claculator.display.value +='4'">4</button></div>
+			<div><button  class="key" onclick="document.claculator.display.value +='5'">5</button></div>
+			<div><button  class="key" onclick="document.claculator.display.value +='6'">6</button></div>
+			<div><button  class="key" onclick="document.claculator.display.value +='*'">*</button></div>
+			
+		</div>
+		<div class="stroka">
+			<div><button  class="key" onclick="document.claculator.display.value +='7'">7</button></div>
+			<div><button  class="key" onclick="document.claculator.display.value +='8'">8</button></div>
+			<div><button  class="key" onclick="document.claculator.display.value +='9'">9</button></div>
+			<div><button  class="key" onclick="document.claculator.display.value +='+'">+</button></div>
+		</div>
+		<div class="stroka">
+			<div><button  class="key" onclick="document.claculator.display.value +='0'">0</button></div>
+			<div><button  class="key" onclick="document.claculator.display.value +='('">(</button></div>
+			<div><button  class="key" onclick="document.claculator.display.value +=')'">)</button></div>
+			<div><button  class="key" onclick="document.claculator.display.value +='/'">/</button></div>
+		</div>
+		<div class="stroka">
+			<div><button  class="key" onclick="document.claculator.display.value +='**'">^</button></div>	
+			<div><button  class="key" onclick="document.claculator.display.value +='-'">-</button></div>
+			<div><button  class="key" onclick="onklik()" >Sus</button></div>
+			<div><button  class="key" onclick="deleate()">del</button></div>
+
+		</div>
+		<div class="switch-btn"></div>
+	
+</div>	
+
+
+</body>
+</html>
